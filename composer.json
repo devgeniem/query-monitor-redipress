@@ -1,0 +1,36 @@
+{
+    "name": "hiondigital/query-monitor-redipress",
+    "version": "1.0.0",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hion\\QMRediPress\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hermanni Piirainen",
+            "email": "hermanni.piirainen@hiondigital.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.1",
+        "composer/installers": "^2.0"
+    },
+    "require-dev": {
+        "devgeniem/geniem-rules-codesniffer": "^1.4.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "lint": "vendor/bin/phpcs --standard=phpcs.xml plugin.php src/ -s --warning-severity=0",
+        "lint-all": "vendor/bin/phpcs --standard=phpcs.xml plugin.php src/",
+        "lint-fix": "vendor/bin/phpcbf --standard=phpcs.xml --basepath=. plugin.php .src/"
+    }
+}
