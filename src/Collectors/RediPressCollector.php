@@ -3,7 +3,6 @@
 namespace Hion\QMRediPress\Collectors;
 
 use Hion\QMRediPress\Storages\RediPressStorage;
-use Illuminate\View\View;
 
 /**
  * RediPress collector.
