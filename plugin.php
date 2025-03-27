@@ -3,7 +3,7 @@
  * Plugin Name:      Query Monitor - RediPress extension
  * Description:      Query Monitor extension for RediPress.
  * Requires Plugins: query-monitor, redipress
- * Version:          1.0.0
+ * Version:          1.0.1
  * Author:           Hion Digital
  * Author URI:       https://www.hiondigital.com/
  * Text Domain:      query-monitor-redipress
